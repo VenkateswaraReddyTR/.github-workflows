@@ -1,6 +1,8 @@
 name: first challenge
 
-on: push
+on: 
+  push:
+    branches: first_challenge
 
 jobs:
   job1:
@@ -8,21 +10,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print date
-      run: date
+        run: date
 
   job2:
     name: second job
     runs-on: macos-latest
     steps:
       - name: print date
-      run: date
+        run: date
 
   job3:
     name: third job
     runs-on: windows-latest
     steps:
       - name: print date
-      run: Get-Date
+        run: Get-Date
 
   job4:
     needs: [job1, job2, job3]
@@ -30,4 +32,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print date
-      run: date
+        run: date
