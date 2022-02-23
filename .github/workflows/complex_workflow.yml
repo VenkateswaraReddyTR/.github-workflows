@@ -1,8 +1,6 @@
 name: first challenge
 
-on:
-  push:
-    branches: first_challenge
+on: push
 
 jobs:
   job1:
@@ -18,12 +16,14 @@ jobs:
     steps:
       - name: print date
       run: date
+
   job3:
     name: third job
     runs-on: windows-latest
     steps:
       - name: print date
       run: Get-Date
+
   job4:
     needs: [job1, job2, job3]
     name: fourth job
