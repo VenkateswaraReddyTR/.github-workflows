@@ -1,35 +1,35 @@
-name: first challenge
+# name: first challenge
 
-on: 
-  push:
-    branches: first_challenge
+# on: 
+#   push:
+#     branches: first_challenge
 
-jobs:
-  job1:
-    name: first job
-    runs-on: ubuntu-latest
-    steps:
-      - name: print date
-        run: date
+# jobs:
+#   job1:
+#     name: first job
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: print date
+#         run: date
 
-  job2:
-    name: second job
-    runs-on: macos-latest
-    steps:
-      - name: print date
-        run: date
+#   job2:
+#     name: second job
+#     runs-on: macos-latest
+#     steps:
+#       - name: print date
+#         run: date
 
-  job3:
-    name: third job
-    runs-on: windows-latest
-    steps:
-      - name: print date
-        run: Get-Date
+#   job3:
+#     name: third job
+#     runs-on: windows-latest
+#     steps:
+#       - name: print date
+#         run: Get-Date
 
-  job4:
-    needs: [job1, job2, job3]
-    name: fourth job
-    runs-on: ubuntu-latest
-    steps:
-      - name: print date
-        run: date
+#   job4:
+#     needs: [job1, job2, job3]
+#     name: fourth job
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: print date
+#         run: date
