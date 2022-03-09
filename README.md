@@ -1,3 +1,3 @@
-# Build Status Badge: ![](https://github.com/VenkateswaraReddyTR/github-actions/workflows/first/badge.svg)
+# Build Status Badge: ![](https://github.com/VenkateswaraReddyTR/.github-workflows/.github/workflows/first/badge.svg)
 # .github-workflows
 github workflows
